@@ -59,3 +59,31 @@ console.log(c);
 let notSure: any = 4;
 notSure = "문자열도 가능";
 notSure = false;
+
+// void
+
+// 반환값 없는 함수 선언
+function warnUser(): void {
+    console.log("This is warning message");
+}
+
+// 변수에는 undefined 또는 null만 할당할 수 있어서 유용하지 않음.
+let unusuable: void = undefined;
+
+// never
+
+// 절대로 발생하지 않는 값의 타입
+// 함수 표현식의 반환 타입, 화살표 함수, 절대 반환하지 않는 표현식 등
+// never는 모든 타입의 서브 타입으로서 모든 타입에 할당 가능
+// 단, never에는 그 어떤 타입도 할당할 수 없음.
+
+// 다른 코드로 절대 연결되지 않는 경우
+function error(message: string): never {
+    throw new Error(message);
+}
+
+function infinityLoop(): never {
+    while (true) {
+
+    }
+}
