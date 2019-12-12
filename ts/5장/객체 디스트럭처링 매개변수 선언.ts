@@ -25,7 +25,7 @@ printProfile2({ name : "Jang" }); // Jang : ?
 // 전달받은 객체에 nationality가 없을 때를 대비한 것이다.
 // 단, 무조건 객체를 전달해야 한다.
 
-function printProfile3({ name, nationality = "?" } = { name: "anonymous"}): void {
+function printProfile3({ name, nationality = "?" } = { name: "anonymous" }): void {
     console.log(`${name} : ${nationality}`);
 }
 
