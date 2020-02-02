@@ -53,7 +53,7 @@ class Base2 {
 }
 
 class Member2 extends Base2 {
-    protected getBirthYear() {
+    protected getBirthYear(): string {
         return this.birthYear; // protected는 상속됨
     }
 }
