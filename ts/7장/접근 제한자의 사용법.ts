@@ -47,3 +47,17 @@ class Cube {
 
 const box: Cube = new Cube(5, 3, 4);
 box.getInfo();
+
+class Base2 {
+    protected birthYear: string = '2017';
+}
+
+class Member2 extends Base2 {
+    protected getBirthYear() {
+        return this.birthYear; // protected는 상속됨
+    }
+}
+
+const hoseung: Member2 = new Member2();
+// hoseung.getBirthYear();
+// protected는 외부접근 안됨
