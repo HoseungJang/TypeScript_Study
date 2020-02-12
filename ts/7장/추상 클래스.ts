@@ -40,7 +40,7 @@ class WildGoose extends AbstractBird {
     }
 
     // 추상 메소드를 오버라이딩하여 구현
-    flySound(sound:string): void {
+    flySound(sound: string): void {
         console.log(`${this.birdName}가 ${sound} 날아갑니다.`);
     }
 }
