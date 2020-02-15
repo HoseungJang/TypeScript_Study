@@ -80,6 +80,7 @@ let format1: IFormat = (data: string, toUpper?: boolean): string => {
     return data.toLowerCase();
 }
 
+// 매개변수 이름을 인터페이스에 선언된 함수 타입과 다르게 선언했더라도 상관 없음
 let format2: IFormat = (str: string, toUpper?:boolean): string => {
     if (toUpper) {
         return str.toUpperCase();
